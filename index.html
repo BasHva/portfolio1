@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bas Witmond — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-prog" id="scrollProg"></div>
+
+    <!-- Cursor -->
+    <div class="c-dot" id="cDot"></div>
+    <div class="c-ring" id="cRing"><span class="crl" id="cRingLabel"></span></div>
+
+    <!-- Loader — lime panels split open -->
+    <div class="loader" id="loader">
+        <div class="loader-half loader-top">
+            <span class="loader-name">BAS WITMOND</span>
+        </div>
+        <div class="loader-half loader-bottom">
+            <div class="loader-bar-wrap">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-brand">Bas Witmond</a>
+        <div class="nav-links">
+            <a href="#work" class="nav-link">Werk</a>
+            <a href="#about" class="nav-link">Over</a>
+            <a href="#contact" class="nav-link nav-cta magnetic">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero" id="hero">
+
+        <!-- Big name — fills viewport width -->
+        <div class="hero-name-wrap" id="heroWrap">
+            <h1 class="hero-name" id="heroName" aria-label="Bas Witmond"><span class="nc" style="--i:0">B</span><span class="nc" style="--i:1">A</span><span class="nc" style="--i:2">S</span><span class="ns"> </span><span class="nc" style="--i:3">W</span><span class="nc" style="--i:4">I</span><span class="nc" style="--i:5">T</span><span class="nc" style="--i:6">M</span><span class="nc" style="--i:7">O</span><span class="nc" style="--i:8">N</span><span class="nc" style="--i:9">D</span></h1>
+        </div>
+
+        <!-- Info below name — like the reference -->
+        <div class="hero-sub">
+            <div class="hero-disc">Communication &amp; Multimedia Design</div>
+            <div class="hero-rule"></div>
+            <div class="hero-strip">
+                <div class="hs-l">
+                    <span>Amsterdam, NL</span>
+                    <span>Hogeschool van Amsterdam</span>
+                </div>
+                <div class="hs-r">
+                    <span class="avdot"></span>
+                    <span>Beschikbaar voor afstudeerstage</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ═══════ MARQUEE ═══════ -->
+    <div class="marquee-block" aria-hidden="true">
+        <div class="mtrack">
+            <span>TYPOGRAFIE</span><span class="msep">✦</span>
+            <span>BRANDING</span><span class="msep">✦</span>
+            <span>UI DESIGN</span><span class="msep">✦</span>
+            <span>MOTION</span><span class="msep">✦</span>
+            <span>IDENTITEIT</span><span class="msep">✦</span>
+            <span>PRINT</span><span class="msep">✦</span>
+            <span>GRID SYSTEMS</span><span class="msep">✦</span>
+            <span>ART DIRECTION</span><span class="msep">✦</span>
+            <span>TYPOGRAFIE</span><span class="msep">✦</span>
+            <span>BRANDING</span><span class="msep">✦</span>
+            <span>UI DESIGN</span><span class="msep">✦</span>
+            <span>MOTION</span><span class="msep">✦</span>
+            <span>IDENTITEIT</span><span class="msep">✦</span>
+            <span>PRINT</span><span class="msep">✦</span>
+            <span>GRID SYSTEMS</span><span class="msep">✦</span>
+            <span>ART DIRECTION</span><span class="msep">✦</span>
+        </div>
+    </div>
+
+    <!-- ═══════ SCROLL IMAGE ═══════ -->
+    <div class="simg-journey" id="simgJourney">
+        <div class="simg-sticky">
+            <div class="simg-frame" id="simgFrame">
+                <img src="projects/foto_bas.PNG" alt="Bas Witmond" style="width:100%;height:100%;object-fit:contain;">
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ WERK ═══════ -->
+    <section class="section" id="work">
+        <div class="section-head">
+            <span class="section-lbl ri">01 WERK</span>
+            <h2 class="section-title split-reveal">Projecten.</h2>
+        </div>
+        <div class="projects-grid">
+
+            <article class="pcard ri">
+                <div class="pcard-media">
+                    <div class="laptop-mock">
+                        <div class="lm-lid">
+                            <div class="lm-cam"></div>
+                            <div class="lm-screen">
+                                <img src="projects/game-1.png" class="lm-shot" alt="Typografie">
+                            </div>
+                        </div>
+                        <div class="lm-base"></div>
+                    </div>
+                    <div class="pcard-badge">
+                        <span class="pb-num">01</span>
+                        <span class="pb-title">Typografie</span>
+                    </div>
+                </div>
+                <div class="pcard-meta">
+                    <h3>Typografie</h3>
+                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                </div>
+            </article>
+
+            <article class="pcard ri">
+                <div class="pcard-media">
+                    <div class="laptop-mock">
+                        <div class="lm-lid">
+                            <div class="lm-cam"></div>
+                            <div class="lm-screen">
+                                <img src="projects/brew-1.png" class="lm-shot" alt="Kleur & Compositie">
+                            </div>
+                        </div>
+                        <div class="lm-base"></div>
+                    </div>
+                    <div class="pcard-badge">
+                        <span class="pb-num">02</span>
+                        <span class="pb-title">Kleur & Compositie</span>
+                    </div>
+                </div>
+                <div class="pcard-meta">
+                    <h3>Kleur &amp; Compositie</h3>
+                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                </div>
+            </article>
+
+            <article class="pcard ri">
+                <div class="pcard-media">
+                    <div class="laptop-mock">
+                        <div class="lm-lid">
+                            <div class="lm-cam"></div>
+                            <div class="lm-screen">
+                                <img src="projects/beeldtaal-5.png" class="lm-shot" alt="Beeldtaal">
+                            </div>
+                        </div>
+                        <div class="lm-base"></div>
+                    </div>
+                    <div class="pcard-badge">
+                        <span class="pb-num">03</span>
+                        <span class="pb-title">Beeldtaal</span>
+                    </div>
+                </div>
+                <div class="pcard-meta">
+                    <h3>Beeldtaal</h3>
+                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                </div>
+            </article>
+
+            <article class="pcard ri">
+                <div class="pcard-media">
+                    <div class="laptop-mock">
+                        <div class="lm-lid">
+                            <div class="lm-cam"></div>
+                            <div class="lm-screen">
+                                <img src="projects/interface-3.png" class="lm-shot" alt="Interface & Beweging">
+                            </div>
+                        </div>
+                        <div class="lm-base"></div>
+                    </div>
+                    <div class="pcard-badge">
+                        <span class="pb-num">04</span>
+                        <span class="pb-title">Interface & Beweging</span>
+                    </div>
+                </div>
+                <div class="pcard-meta">
+                    <h3>Interface &amp; Beweging</h3>
+                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                </div>
+            </article>
+
+            <article class="pcard pcard-wide ri">
+                <div class="pcard-media">
+                    <div class="pcw-center">
+                        <span class="pcw-label">Minor Visual Interface Design · Eindproject</span>
+                        <h2 class="pcw-heading">De Meesterproef</h2>
+                    </div>
+                    <div class="pcw-mock-right">
+                        <div class="lm-lid">
+                            <div class="lm-cam"></div>
+                            <div class="lm-screen">
+                                <img src="projects/degreep-1.png" class="lm-shot" alt="De Meesterproef">
+                            </div>
+                        </div>
+                        <div class="lm-base"></div>
+                    </div>
+                    <div class="pcard-badge">
+                        <span class="pb-num">05</span>
+                        <span class="pb-title">De Meesterproef</span>
+                    </div>
+                </div>
+                <div class="pcard-meta">
+                    <h3>De Meesterproef</h3>
+                    <div class="pcard-info"><span>Eindproject</span><span>2026</span></div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ═══════ OVER MIJ ═══════ -->
+    <section class="section" id="about">
+        <div class="section-head">
+            <span class="section-lbl ri">02 OVER MIJ</span>
+        </div>
+        <div class="about-statement">
+            <p class="about-big split-reveal">Van idee tot iets waar ik<br><em>trots op ben.</em></p>
+        </div>
+
+        <div class="about-facts">
+            <div class="af-item ri">
+                <span class="af-num">01</span>
+                <p class="af-text">Ik ben Bas, derdejaars CMD-student aan de HvA Amsterdam. Ik ontwerp graag dingen die er niet alleen goed uitzien, maar ook echt ergens voor staan. Van typografie tot UI design, ik gooi me er volledig in.</p>
+            </div>
+            <div class="af-item ri">
+                <span class="af-num">02</span>
+                <p class="af-text">Buiten school ben ik altijd wel bezig met iets. Festivals, tijd met vrienden en familie, de sportschool. Ik hou er niet van om stil te zitten en dat zie je ook terug in hoe ik werk.</p>
+            </div>
+            <div class="af-item ri">
+                <span class="af-num">03</span>
+                <p class="af-text">Ik ben sociaal, hou van een goed gesprek en ga nergens voor liggen. Naast mijn studie werk ik bij Albert Heijn. Vanaf september 2026 ben ik op zoek naar een afstudeerstage waar ik echt iets kan bijdragen.</p>
+            </div>
+        </div>
+
+        <div class="ab-grid">
+            <div class="ab-block ri">
+                <span class="ab-label">Vaardigheden</span>
+                <ul class="ab-list">
+                    <li>Typografie</li>
+                    <li>Branding</li>
+                    <li>UI Design</li>
+                    <li>Motion Design</li>
+                    <li>Webdesign</li>
+                    <li>Concept ontwikkeling</li>
+                </ul>
+            </div>
+            <div class="ab-block ri">
+                <span class="ab-label">Programma's</span>
+                <ul class="ab-list">
+                    <li>Figma</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Canva</li>
+                    <li>Webflow</li>
+                    <li>Miro</li>
+                    <li>PowerPoint</li>
+                    <li>AI Tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="currently-block ri">
+            <div class="cb-row">
+                <span class="cb-key">Bezig met</span>
+                <span class="cb-val">CMD jaar 3 · HvA Amsterdam</span>
+            </div>
+            <div class="cb-row">
+                <span class="cb-key">Beschikbaar</span>
+                <span class="cb-val cb-accent">● Afstudeerstage · september 2026</span>
+            </div>
+            <div class="cb-row">
+                <span class="cb-key">Woont</span>
+                <span class="cb-val">Amsterdam, Nederland</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ CONTACT ═══════ -->
+    <section class="contact-section" id="contact">
+        <div class="section contact-inner">
+            <span class="section-lbl ri">03 CONTACT</span>
+
+            <h2 class="contact-heading ri">Laten we<br>kennis maken.</h2>
+
+            <a href="mailto:bas.witmond@gmail.com" class="contact-cta ri">
+                <span>bas.witmond@gmail.com</span>
+                <span class="cta-arr">→</span>
+            </a>
+
+            <div class="contact-secondary ri">
+                <a href="mailto:bas.witmond@hva.nl" class="cs-link">bas.witmond@hva.nl</a>
+                <span class="cs-dot">·</span>
+                <a href="https://www.instagram.com/bas.wm/" target="_blank" rel="noopener" class="cs-link">@bas.wm ↗</a>
+                <span class="cs-dot">·</span>
+                <a href="https://www.linkedin.com/in/bas-witmond-b30074305" target="_blank" rel="noopener" class="cs-link">LinkedIn ↗</a>
+                <span class="cs-dot">·</span>
+                <span class="cs-avail"><span class="avdot"></span>Beschikbaar · sept 2026</span>
+            </div>
+        </div>
+
+        <div class="back-top-wrap">
+            <button class="back-top" id="backTop" aria-label="Terug naar boven">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="2,10 8,4 14,10"/>
+                </svg>
+            </button>
+        </div>
+
+        <footer class="footer section">
+            <span>© 2026 Bas Witmond</span>
+            <span>CMD · HvA Amsterdam</span>
+        </footer>
+    </section>
+
+    <!-- ═══════ PROJECT OVERLAY ═══════ -->
+    <div class="proj-overlay" id="projOverlay" aria-hidden="true">
+        <button class="po-close" id="poClose" aria-label="Sluit project">
+            <span></span><span></span>
+        </button>
+        <div class="po-scroll">
+            <div class="po-content section">
+                <div class="po-header">
+                    <div class="po-hl">
+                        <span class="po-num" id="poNum">01</span>
+                        <div>
+                            <h2 class="po-title" id="poTitle">Project</h2>
+                            <span class="po-meta" id="poMeta">Categorie · Jaar</span>
+                        </div>
+                    </div>
+                    <div class="po-hr">
+                        <span class="po-rl">Rol</span>
+                        <span class="po-role" id="poRole"></span>
+                    </div>
+                </div>
+                <div class="po-media" id="poMedia"></div>
+                <div class="po-body">
+                    <p class="po-desc" id="poDesc"></p>
+                    <div class="po-tasks" id="poTasks"></div>
+                    <p class="po-soon">Volledige case study volgt binnenkort.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
