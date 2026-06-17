@@ -300,19 +300,19 @@ const projectData = [
         title: 'Typografie',
         meta: 'Typografie · 2026',
         role: 'Figma, Handwerk',
-        desc: 'Driedelig typografisch onderzoek binnen de minor Visual Interface Design. Van handmatig knippen tot een volledig uitgewerkte interactieve webgame.',
+        desc: 'Drie opdrachten, drie richtingen. Van letters met de hand knippen uit karton tot het bouwen van een speelbare retro-game en een mobiele webpagina.',
         tasks: [
             {
                 label: 'Opdracht 01 · Typografisch kalenderblad',
-                desc: 'Voor deze opdracht heb ik mijn eigen verjaardag omgezet in een typografisch kalenderblad. Twee cijfers en drie letters, allemaal nagemaakt als 3D pixelletters van blauw karton. Elke letter heb ik met de hand gesneden en laagje voor laagje opgebouwd zodat ze driedimensionaal lijken. Het was een behoorlijk arbeidsintensief proces, maar het eindresultaat oogt meer als een kunstwerk dan als een gewone typografie-opdracht.'
+                desc: 'Voor deze opdracht maakte ik van mijn eigen verjaardag een typografisch kalenderblad. Elk cijfer en elke letter knipte ik met de hand uit blauw karton en bouwde ik laagje voor laagje op zodat ze 3D lijken. Klinkt simpel, maar het kostte echt veel tijd. Het eindresultaat zag er vet uit en ik was er trots op.'
             },
             {
                 label: 'Opdracht 02 · Pixel Font Type Specimen',
-                desc: 'Mijn pixel font heb ik gepresenteerd als een volledig speelbare retro-game, gebouwd in HTML en CSS. De website bestaat uit meerdere levels waarbij je door de geschiedenis van het pixel font heen speelt. Elk level vertelt een ander deel van het verhaal, met lopende tekst in het lettertype zelf en een quiz als afsluiting. Ik koos voor een game als format omdat het de beperking van het pixel font precies laat zien: kleine pixels, strakke rasters, maar toch vol karakter.'
+                desc: 'Mijn pixel font presenteerde ik als een speelbare retro-game, gebouwd in HTML en CSS. Je speelt door meerdere levels en leert zo de geschiedenis van het lettertype. Ik koos voor een game omdat dat de beperkingen van een pixel font goed laat zien: kleine pixels, strakke rasters, maar toch vol karakter.'
             },
             {
                 label: 'Opdracht 03 · Typografie voor scherm',
-                desc: 'In de derde opdracht onderzocht ik hoe mijn pixel font presteert op een echt mobiel scherm. Ik heb een artikel over responsive typografie opgemaakt met het lettertype, met extra aandacht voor leesbaarheid, lettergrootte, regelafstand en contrast. Het doel was laten zien dat een pixel font ook serieus en functioneel kan zijn als je het goed toepast. Het eindresultaat was specifiek ontworpen voor weergave op de eigen telefoon.',
+                desc: 'In de derde opdracht keek ik hoe mijn pixel font werkt op een echt telefoonscherm. Ik maakte er een artikel van met aandacht voor leesbaarheid, lettergrootte en contrast. Het punt: ook een pixel font kan er serieus en goed uitzien als je het goed toepast.',
             },
         ],
         images: [
@@ -329,19 +329,19 @@ const projectData = [
         title: 'Kleur & Compositie',
         meta: 'Kleur & Compositie · 2026',
         role: 'Figma',
-        desc: 'The Morning Brew is een conceptuele koffieshop-app, ontworpen voor persona Mark. Binnen de minor Visual Interface Design heb ik twee volledige modi uitgewerkt: een warme verleidende dagmodus en een functionele nachtmodus. Kleurpsychologie, compositie en gestalt-principes staan centraal in elke keuze.',
+        desc: 'The Morning Brew is een conceptuele koffieshop-app voor persona Mark. Ik ontwierp twee versies: een warme dagmodus en een donkere nachtmodus, beiden onderbouwd met kleurpsychologie en gestalt.',
         tasks: [
             {
                 label: 'Dagmodus · Persona vertaling & branding',
-                desc: 'Voor persona Mark heb ik een warme, premium dagmodus ontworpen. Het palet combineert zacht crème, diepgroen en mauve roze, kleuren die passen bij de serieuze koffiecultuur die Mark waardeert. Glassmorphism-kaarten over sfeervolle achtergrondbeelden geven het merk warmte en diepte. De microcopy, typografische keuzes en productpresentatie sluiten allemaal aan op de verfijnde smaak van de persona. Het eindresultaat voelt als een uitnodiging om te ontdekken.'
+                desc: 'Voor persona Mark maakte ik een warme dagmodus met crème, donkergroen en mauve roze. Kleuren die passen bij een serieuze koffieliefhebber. Met glassmorphism-kaarten over sfeervolle foto\'s geef je het geheel een premium gevoel. Elke keuze, van de tekst tot de productfoto, past bij wie Mark is.'
             },
             {
                 label: 'Kleurpsychologie & visuele compositie',
-                desc: 'Elke kleur- en compositiekeuze is bewust onderbouwd met theorie. Groen staat voor natuur, duurzaamheid en rust, terwijl crème warmte en een premiumgevoel uitstraalt. De productpagina is opgebouwd met een F-patroon en een consistent 8pt grid. Gestalt-principes als nabijheid en overeenkomst zorgen ervoor dat gerelateerde koffieproducten als visuele groep worden waargenomen. Alle teksten en CTA-knoppen voldoen aan de WCAG AA contrastnorm.'
+                desc: 'Elke kleur- en lay-outkeuze is onderbouwd met theorie. Groen staat voor natuur en duurzaamheid, crème voor warmte en kwaliteit. De pagina is opgebouwd met een F-patroon en een 8pt grid. Gestalt-principes zorgen ervoor dat je producten automatisch als groepen ziet. En alles haalt de WCAG-contrastnorm voor toegankelijkheid.'
             },
             {
                 label: 'Nachtmodus · Dashboard & smaakprofiel',
-                desc: 'De nachtmodus schakelt de sfeer volledig om naar een donkergroen, functioneel scherm. Het dashboard toont het persoonlijke smaakprofiel van Mark als een octagonale radar met assen als Frisheid, Complexiteit, Body en Duurzaamheid. Loyalty stamps, de laatste bestelling en een productaanbeveling geven de pagina directe bruikbaarheid. De switch van dag naar nacht is één toggle, maar de totale beleving van de interface verandert compleet.'
+                desc: 'De nachtmodus voelt compleet anders. Donkergroen, functioneel en overzichtelijk. Het dashboard toont het smaakprofiel van Mark in een radar-grafiek, met zijn laatste bestelling en een aanbeveling. Eén toggle, maar de hele sfeer verandert.'
             }
         ],
         images: [
@@ -357,19 +357,19 @@ const projectData = [
         title: 'Beeldtaal',
         meta: 'Beeldtaal · 2026',
         role: 'Onderzoek, Ontwerp',
-        desc: 'Drie opdrachten rond semiotiek, retorica en gestalt binnen de minor Visual Interface Design. Van het analyseren van bestaande campagnes tot het ontwerpen van een eigen poster over plasticvervuiling.',
+        desc: 'Drie opdrachten rond semiotiek, retorica en gestalt. Van het analyseren van een bestaande campagneposter tot het ontwerpen van mijn eigen poster over plasticvervuiling.',
         tasks: [
             {
                 label: 'Opdracht 01 · Semiotiek',
-                desc: 'Voor de semiotiek-opdracht koos ik schoenen als object en plaatste ze in drie volledig verschillende sferen. Door steeds de context en omgeving te veranderen, verandert ook de betekenis van hetzelfde object. In elke uitwerking verwerkte ik bewust een indexicaal teken om een extra betekenislaag toe te voegen. Moddersporen laten bijvoorbeeld zien dat iemand door de modder heeft gelopen en net is thuisgekomen, zonder dat je de persoon zelf hoeft te zien. Het onderzoek laat zien hoe krachtig context is in visuele communicatie.'
+                desc: 'Voor de semiotiek-opdracht koos ik schoenen als onderwerp en plaatste ze in drie totaal verschillende contexten. Dezelfde schoen, maar elke keer een andere betekenis. Ik voegde ook een indexicaal teken toe, iets wat naar iets anders verwijst zonder het direct te laten zien. Moddersporen bij de deur zeggen genoeg zonder dat je iemand hoeft te zien.'
             },
             {
                 label: 'Opdracht 02 · Retorica',
-                desc: 'Voor de retorica-opdracht analyseerde ik de WWF-campagneposter "Out of the Plastic Trap" op logos, kairos, stijlfiguren, indexicale tekens, framing en gestaltwetten. Het realistische beeld van een schildpad in visnetten maakt de boodschap direct geloofwaardig. Daarna maakte ik een verbeterde versie waarbij de urgentie nog sterker overkomt. De schildpad wordt nu daadwerkelijk verstikt door plastic, de kleuren zijn intenser en de tekst directer. Het resultaat is een poster die de kijker emotioneel raakt en meteen aanzet tot actie.'
+                desc: 'Voor retorica analyseerde ik de WWF-poster "Out of the Plastic Trap". Ik keek hoe ze overtuiging, timing en stijl gebruiken om de boodschap te versterken. Daarna maakte ik een verbeterde versie: de schildpad verstikt nu echt door het plastic, de kleuren zijn feller en de tekst directer. Meer impact, sneller.'
             },
             {
                 label: 'Eindoplevering · Eigen poster',
-                desc: 'Als eindopdracht ontwierp ik een eigen poster over plasticvervuiling, gericht op jongeren en jongvolwassenen. De poster is visueel gesplitst in twee helften: een vervuilde wereld vol plastic afval en een gezonde, schone natuur. De schildpad aan de vervuilde kant staat symbool voor alle negatieve gevolgen van plastic, terwijl de aarde in het midden als symbolisch teken dient voor de keuze die de hele wereld elke dag maakt. De boodschap "Plastic? Niet met mij!" plaatst de verantwoordelijkheid direct bij de kijker.'
+                desc: 'Als eindopdracht maakte ik mijn eigen poster over plasticvervuiling, gericht op jongeren. De poster is opgesplitst: aan de ene kant een vervuilde wereld, aan de andere schone natuur. De schildpad staat voor alles wat er misgaat, en de boodschap "Plastic? Niet met mij!" maakt het persoonlijk.'
             }
         ],
         images: [
@@ -384,19 +384,19 @@ const projectData = [
         title: 'Interface & Beweging',
         meta: 'Interface & Beweging · 2026',
         role: 'Cavalry, Figma',
-        desc: 'Animatieproject binnen de minor Visual Interface Design. Ik heb een geanimeerd Lego-poppetje ontworpen en gebouwd in Cavalry, waarbij drie interactieve knoppen elk een andere beweging triggeren. Van eerste schets tot werkende interactieve animatie.',
+        desc: 'Een geanimeerd Lego-poppetje in Cavalry, met drie knoppen die elk een andere beweging starten. Van eerste schets tot werkende interactieve animatie.',
         tasks: [
             {
                 label: 'Concept & technisch onderzoek',
-                desc: 'Na het verkennen van meerdere concepten zoals een Alien monster en een Liefdoes robot koos ik uiteindelijk voor het Lego-poppetje. Het is een simpel en herkenbaar karakter met duidelijke vormen, wat ideaal is voor animatie. Ik heb onderzoek gedaan naar het programma Cavalry en de geschiedenis van het Lego-figuurtje, dat in 1978 werd geïntroduceerd. De eenvoudige opbouw van het poppetje maakt het geschikt om in veel verschillende verhalen en contexten te gebruiken.'
+                desc: 'Ik keek naar meerdere concepten, van een alien tot een robot, maar koos uiteindelijk voor het Lego-poppetje. Herkenbaar, simpele vormen en makkelijk te animeren. Ik deed onderzoek naar Cavalry en de geschiedenis van het poppetje, dat al sinds 1978 bestaat. Juist die eenvoud maakt het interessant om mee te werken.'
             },
             {
                 label: 'Moving icons & storyboard',
-                desc: 'Ik heb drie interactieve moving icons ontworpen in Figma, die elk een andere animatie van het poppetje triggeren. De achtergrond van de knop verandert bij hover, en rondom elke knop speelt een rode loading-animatie af om het geheel dynamischer te maken. In het storyboard heb ik de drie bewegingen uitgewerkt: het poppetje gooit een blokje omhoog en vangt het op, laat zijn lichaam uit elkaar vallen en weer samenkomen, en vangt een pet op via zijn voeten en laat deze op zijn hoofd landen.'
+                desc: 'Ik ontwierp drie knoppen in Figma die elk een andere animatie starten. Bij hover verandert de achtergrond en speelt er een laadanimatie af. In mijn storyboard werkte ik de drie bewegingen uit: een blokje opgooien en vangen, het poppetje uit elkaar laten vallen, en een pet die via zijn voeten op zijn hoofd landt.'
             },
             {
                 label: 'Eindproduct · Animatie in Cavalry',
-                desc: 'Het eindproduct is een volledig geanimeerd Lego-poppetje gebouwd in Cavalry. De animatie speelt drie bewegingen af op basis van welke knop je indrukt. Het animeren in Cavalry was technisch uitdagend omdat er weinig tutorials beschikbaar zijn voor het programma. Ik heb de props en knoppen in Figma ontworpen en de animaties daarna in Cavalry afgemaakt. Het resultaat laat zien dat herhaalbare beweging, valbewegingen en speelse interactie samen een karakter écht tot leven kunnen brengen.'
+                desc: 'Het eindresultaat is een volledig geanimeerd poppetje in Cavalry. Druk je op een knop, dan speelt de bijbehorende animatie. Cavalry heeft nauwelijks tutorials, dus het was echt uitzoeken. Maar het werkte: herhaalbare bewegingen en speelse animaties die het poppetje echt tot leven brengen.'
             }
         ],
         images: [
@@ -410,19 +410,19 @@ const projectData = [
         title: 'De Meesterproef',
         meta: 'Meesterproef · 2026',
         role: 'Figma, HTML / CSS / JS',
-        desc: 'Een interactieve website over social media verslaving waarbij de gebruiker zelf ervaart hoe scrollen langzaam verandert in controleverlies. De interface begint rustig en herkenbaar als een normale feed, maar wordt steeds chaotischer naarmate je verder scrollt.',
+        desc: 'Een interactieve website over social media verslaving. Je ervaart zelf hoe scrollen langzaam verandert in iets waar je geen controle meer over hebt.',
         tasks: [
             {
                 label: 'Concept & visueel onderzoek',
-                desc: 'Voor de meesterproef koos ik het onderwerp social media verslaving, omdat ik dit zelf herken en ook bij mensen om mij heen zie. Als basis gebruikte ik het artikel "Kun je verslaafd raken aan je smartphone?" van het AD. Ik heb drie kleurpaletten ontwikkeld en gekozen voor een donkere, digitale sfeer die past bij \'s avonds eindeloos scrollen. Het moodboard laat de ervaring stap voor stap zien: van rust en controle naar chaos en overload.'
+                desc: 'Ik koos dit onderwerp omdat ik het zelf herken en ook om mij heen zie. Als basis gebruikte ik een artikel van het AD over smartphoneverslaving. Ik maakte drie kleurpaletten en koos voor een donkere, digitale sfeer die past bij \'s avonds eindeloos scrollen. Het moodboard laat de opbouw zien: van rustig en normaal naar compleet chaos.'
             },
             {
                 label: 'Interface ontwerp · Figma',
-                desc: 'In Figma heb ik de vijf fases van de website uitgewerkt: rust, scrollen, verslaving, chaos en overload. Elke fase heeft een eigen visuele sfeer die steeds drukker en overweldigender wordt. Ik heb gewerkt met donkere kleuren, paarse en roze accenten die verwijzen naar schermlicht en notificaties, en een oplopende hoeveelheid visuele prikkels om het gevoel van controle verlies te versterken.'
+                desc: 'In Figma werkte ik de vijf fases uit: rust, scrollen, verslaving, chaos en overload. Elke fase heeft een eigen sfeer die steeds drukker wordt. Donkere kleuren met paarse en roze accenten, die doen denken aan schermlicht en notificaties. Hoe verder je komt, hoe meer visuele prikkels.'
             },
             {
                 label: 'Eindproduct · Interactieve website',
-                desc: 'Het eindproduct is een volledig werkende interactieve website gebouwd in HTML, CSS en JavaScript. De website begint als een rustige social media feed waarbij alles voorspelbaar voelt. Hoe langer de gebruiker scrollt, hoe meer likes, notificaties en nieuwe posts verschijnen zonder dat er om gevraagd wordt. De animaties worden sneller en drukker totdat de interface chaotisch is en de gebruiker het gevoel heeft de controle te verliezen. Het concept is: je denkt dat jij scrollt, maar de interface stuurt jouw gedrag.',
+                desc: 'Het eindproduct is een werkende website gebouwd in HTML, CSS en JavaScript. Het begint als een gewone feed, maar hoe langer je scrollt, hoe meer likes, notificaties en posts er verschijnen zonder dat je erom vraagt. De animaties worden sneller en drukker. Het idee: jij denkt dat je scrollt, maar de interface stuurt jou.',
             }
         ],
         liveUrl: 'https://bashva.github.io/socialmediaverslaving/',
