@@ -297,221 +297,544 @@ document.querySelectorAll('.ri').forEach(el => revealObs.observe(el));
 const projectData = [
     {
         num: '01',
-        title: 'Typografie',
-        meta: 'Typografie · 2026',
-        role: 'Figma, Handwerk',
-        desc: 'Drie opdrachten, drie richtingen. Van letters met de hand knippen uit karton tot het bouwen van een speelbare retro-game en een mobiele webpagina.',
+        title: 'Morning Brew',
+        meta: 'UI Design · Figma · 2026',
+        tags: ['UI Design', 'Figma', '2026'],
+        role: 'UI Designer · Figma',
+        desc: 'Een conceptuele website voor koffieshop The Morning Brew, ontworpen voor persona Mark. Ik ontwierp de volledige UI in Figma: van visuele identiteit tot klikbaar prototype, met een landingspagina en een persoonlijk dashboard.',
+        heroImage: 'projects/brew-1.png',
+        workImages: ['projects/eindschermg.png', 'projects/dashboard.png'],
+        workImageLabels: ['Landing Page', 'Dashboard'],
+        workImageAspects: ['4/5', null],
+        workImageCovers:  [true, false],
+        typography: {
+            name: 'Unigeo64',
+            specimen: 'Golden Roast',
+            weights: [
+                { label: 'Regular',  value: 400 },
+                { label: 'Semibold', value: 600 },
+                { label: 'Bold',     value: 700 }
+            ],
+            body: {
+                name: 'Inter',
+                usage: 'Subteksten & bodytekst',
+                fontStack: 'Inter, sans-serif',
+                weights: [
+                    { label: 'Light',   value: 300 },
+                    { label: 'Regular', value: 400 },
+                    { label: 'Medium',  value: 500 }
+                ]
+            }
+        },
+        colorPalette: [
+            { hex: '#FCEED4', name: 'Morning Cream', pct: '30%' },
+            { hex: '#2A4636', name: 'Forest Green',  pct: '60%' },
+            { hex: '#C9978E', name: 'Rosé Blush',    pct: '10%' }
+        ],
+        figmaUrl: 'https://www.figma.com/proto/56PuBSNeadvWzfTWBmmXkg/The-Morning-Brew?node-id=340-2&viewport=3699%2C-1500%2C0.09&t=w3V0kCYAK7mDqrBn-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1',
         tasks: [
             {
-                label: 'Opdracht 01 · Typografisch kalenderblad',
-                desc: 'Voor deze opdracht maakte ik van mijn eigen verjaardag een typografisch kalenderblad. Elk cijfer en elke letter knipte ik met de hand uit blauw karton en bouwde ik laagje voor laagje op zodat ze 3D lijken. Klinkt simpel, maar het kostte echt veel tijd. Het eindresultaat zag er vet uit en ik was er trots op.'
+                label: 'Persona & visuele identiteit',
+                desc: 'Mark is 34, houdt van kwaliteit en gaat niet voor de goedkoopste koffie. Ik maakte een visuele identiteit die daarbij past: crème, donkergroen en een vleugje mauve roze. De interface voelt premium maar niet overdreven. Glassmorphism-kaarten over sfeervolle productfoto\'s versterken dat gevoel van kwaliteit.'
             },
             {
-                label: 'Opdracht 02 · Pixel Font Type Specimen',
-                desc: 'Mijn pixel font presenteerde ik als een speelbare retro-game, gebouwd in HTML en CSS. Je speelt door meerdere levels en leert zo de geschiedenis van het lettertype. Ik koos voor een game omdat dat de beperkingen van een pixel font goed laat zien: kleine pixels, strakke rasters, maar toch vol karakter.'
+                label: 'Kleurpsychologie & layout',
+                desc: 'Alle kleur- en layoutkeuzes zijn bewust gemaakt. Ik paste de 60-30-10 regel toe: 60% Forest Green als dominante kleur, 30% Morning Cream voor rust en lucht, en 10% Rosé Blush als accent op knoppen en sleutelmomenten. Voor de layout werkte ik met een 12-kolommengrid met vaste marges, zodat alle elementen strak uitgelijnd zijn en de pagina een professionele, geordende uitstraling krijgt. Gestalt-principes zoals nabijheid en groepering zorgen dat producten als set worden gelezen, niet als losse items.'
             },
             {
-                label: 'Opdracht 03 · Typografie voor scherm',
-                desc: 'In de derde opdracht keek ik hoe mijn pixel font werkt op een echt telefoonscherm. Ik maakte er een artikel van met aandacht voor leesbaarheid, lettergrootte en contrast. Het punt: ook een pixel font kan er serieus en goed uitzien als je het goed toepast.',
+                label: 'Nachtmodus & dashboard',
+                desc: 'Eén toggle, maar de hele sfeer verandert. De nachtmodus is functioneel en donker: overzicht staat centraal. Het dashboard laat het smaakprofiel van Mark zien in een radar-grafiek, met zijn laatste bestelling en een aanbeveling op basis van zijn voorkeuren. Het voelt als een eigen pagina, niet als een donkere versie van hetzelfde scherm.'
             },
+            {
+                label: 'Prototype & reflectie',
+                desc: 'Het eindresultaat is een volledig klikbaar Figma-prototype met twee complete gebruikersflows. Dit project heb ik van concept tot prototype volledig zelfstandig opgezet en uitgewerkt. Wat ik leerde: kleur stuurt gedrag meer dan je denkt. Een gebruiker voelt de sfeer van een website voordat hij ook maar iets aanklikt.'
+            }
         ],
-        images: [
-            'projects/game-1.png',
-            'projects/game-3.png',
-            'projects/papier-1.png',
-            'projects/papier-2.png',
-            'projects/typografie-1.png',
-        ],
-        collage: true
+        quote: 'Kleur is geen decoratie, het is communicatie.',
+        quoteDesc: 'Bij elke keuze vroeg ik me af: wat voelt de gebruiker bij deze kleur? Niet wat ziet hij, maar wat voelt hij.',
+        en: {
+            desc: 'A conceptual website for coffee shop The Morning Brew, designed for persona Mark. I designed the full UI in Figma: from visual identity to clickable prototype, with a landing page and a personal dashboard.',
+            role: 'UI Designer · Figma',
+            tasks: [
+                { label: 'Persona & visual identity', desc: 'Mark is 34, values quality and doesn\'t go for the cheapest coffee. I created a visual identity to match: cream, dark green and a touch of mauve pink. The interface feels premium but not overdone. Glassmorphism cards over atmospheric product photos reinforce that sense of quality.' },
+                { label: 'Color psychology & layout', desc: 'Every color and layout choice was deliberate. I applied the 60-30-10 rule: 60% Forest Green as the dominant color, 30% Morning Cream for breathing room, and 10% Rosé Blush as an accent on buttons and key interactions. For the layout I used a 12-column grid with fixed margins, keeping all elements tightly aligned and giving the page a professional, structured feel. Gestalt principles like proximity and grouping ensure products are read as a set, not individual items.' },
+                { label: 'Night mode & dashboard', desc: 'One toggle, but the whole atmosphere changes. Night mode is functional and dark: overview takes center stage. The dashboard shows Mark\'s taste profile in a radar chart, with his last order and a recommendation based on his preferences. It feels like its own page, not a dark version of the same screen.' },
+                { label: 'Prototype & reflection', desc: 'The end result is a fully clickable Figma prototype with two complete user flows. I set up and executed this project entirely independently from concept to prototype. What I learned: color drives behavior more than you think. A user feels the mood of a website before they click anything.' }
+            ],
+            quote: 'Color is not decoration, it\'s communication.',
+            quoteDesc: 'With every choice I asked myself: what does the user feel with this color? Not what does he see, but what does he feel.'
+        }
     },
     {
         num: '02',
-        title: 'Kleur & Compositie',
-        meta: 'Kleur & Compositie · 2026',
-        role: 'Figma',
-        desc: 'The Morning Brew is een conceptuele koffieshop-app voor persona Mark. Ik ontwierp twee versies: een warme dagmodus en een donkere nachtmodus, beiden onderbouwd met kleurpsychologie en gestalt.',
+        title: 'House of Horror',
+        meta: 'Game Design · Unity · 2024',
+        tags: ['Game Design', 'Unity', 'Canva', '2024'],
+        role: 'Concept & Gamedesign · Unity, Adobe XD, Canva',
+        desc: 'Een multiplayer horror-escape game voor een zelfbedachte CMD-community. Eén speler ontsnapt via een laptop uit een spookhuis, terwijl de rest van de groep via een app de zombies bestuurt die hem moeten tegenhouden.',
+        heroImage: 'projects/houseofhorror.png',
+        constrainGrid: true,
+        workVideo: 'projects/houseofhorror-web.mp4',
+        workImages: ['projects/app-2.png', 'projects/game-1.png', 'projects/game-2.png'],
+        workImageFits: ['cover', null, null],
+        workImagePositions: ['center center', null, null],
+        figmaUrl: 'https://canva.link/s2nfrkf5jhf1bfz',
+        protoLabel: 'Bekijk posters',
+        boothImage: 'projects/horrorkraampje.jpg',
+        boothCaption: 'Op de CMD Community Expo bouwden we ons eigen horrorkraampje: bezoekers speelden de game live achter de laptop, terwijl de rest meekeek op het scherm. Met een Scream-masker, een mysterieuze "durf je je hand erin te steken"-doos en horror-snoep creëerden we precies de sfeer waar de community om draait. Het mooiste moment was zien hoe mensen die elkaar niet kenden samen om de laptop stonden te gillen en te lachen.',
         tasks: [
             {
-                label: 'Dagmodus · Persona vertaling & branding',
-                desc: 'Voor persona Mark maakte ik een warme dagmodus met crème, donkergroen en mauve roze. Kleuren die passen bij een serieuze koffieliefhebber. Met glassmorphism-kaarten over sfeervolle foto\'s geef je het geheel een premium gevoel. Elke keuze, van de tekst tot de productfoto, past bij wie Mark is.'
+                label: 'Concept & doelgroep',
+                desc: 'Ik deed onderzoek naar horror als genre en de community eromheen. Via interviews en een empathy map sprak ik met verschillende horrorliefhebbers om te begrijpen wat hen aanspreekt. Mijn eerste idee was een VR-horrorervaring, maar uit feedback bleek dat te complex voor een grote groep. Ik koos uiteindelijk voor een game die iedereen gewoon achter een laptop kan spelen, zonder gedoe.'
             },
             {
-                label: 'Kleurpsychologie & visuele compositie',
-                desc: 'Elke kleur- en lay-outkeuze is onderbouwd met theorie. Groen staat voor natuur en duurzaamheid, crème voor warmte en kwaliteit. De pagina is opgebouwd met een F-patroon en een 8pt grid. Gestalt-principes zorgen ervoor dat je producten automatisch als groepen ziet. En alles haalt de WCAG-contrastnorm voor toegankelijkheid.'
+                label: 'De game bouwen in Unity',
+                desc: 'Het horrorhuis zelf bouwde ik in Unity. De speler moet door het huis lopen, een sleutel vinden en ontsnappen voordat de zombies hem pakken. Het was pas de tweede keer dat ik met Unity werkte. Ik gebruikte tutorials, vroeg hulp aan de docent en daagde mezelf uit door extra interactie toe te voegen, zoals het zelf kunnen oppakken van de sleutel in plaats van een simpele trigger-zone.'
             },
             {
-                label: 'Nachtmodus · Dashboard & smaakprofiel',
-                desc: 'De nachtmodus voelt compleet anders. Donkergroen, functioneel en overzichtelijk. Het dashboard toont het smaakprofiel van Mark in een radar-grafiek, met zijn laatste bestelling en een aanbeveling. Eén toggle, maar de hele sfeer verandert.'
+                label: 'Companion app in Adobe XD',
+                desc: 'Om het spel écht spannend te maken ontwierp ik een companion app in Adobe XD. Andere spelers besturen via hun telefoon zombies die de hoofdspeler in het huis proberen te stoppen. Ik voegde ook een hartslagmeter toe: wie de laagste hartslag had tijdens het spelen, won. Samen met een zelfgemaakt Snapchat-filter zorgde dit voor een complete, interactieve spelervaring.'
+            },
+            {
+                label: 'Promotiemateriaal in Canva & expo',
+                desc: 'Voor de promotie ontwierp ik in Canva een A3-conceptposter, een promofilmpje en social content om de community te introduceren. Op de CMD Community Expo speelden bezoekers de game live tegen elkaar. Wat ik leerde: ik was soms zo druk met bouwen dat ik vergat de doelgroep actief te blijven bevragen. Aannames doen is makkelijk, maar blijven vragen stellen levert altijd meer op.'
             }
         ],
-        images: [
-            'projects/brew-1.png',
-            'projects/brew-2.png',
-            'projects/brew-3.png',
-            'projects/brew-4.png',
-        ],
-        collage4: true
+        quote: 'Angst voelt minder eng als je hem samen deelt.',
+        quoteDesc: 'Of je nou sociaal bent of niet: door samen de zombies te slim af te zijn, leer je een community zonder dat je het doorhebt beter kennen.',
+        en: {
+            desc: 'A multiplayer horror escape game for a self-conceived CMD community. One player escapes from a haunted house via a laptop, while the rest of the group controls zombies via an app to stop them.',
+            role: 'Concept & Game Design · Unity, Adobe XD, Canva',
+            boothCaption: 'At the CMD Community Expo we built our own horror booth: visitors played the game live behind the laptop while the rest watched on screen. With a Scream mask, a mysterious "dare to put your hand in" box and horror candy, we created exactly the atmosphere the community is about. The best moment was seeing people who didn\'t know each other standing around the laptop screaming and laughing together.',
+            tasks: [
+                { label: 'Concept & target group', desc: 'I researched horror as a genre and the community around it. Through interviews and an empathy map I spoke with different horror fans to understand what appeals to them. My first idea was a VR horror experience, but feedback showed it was too complex for a large group. I ended up going with a game anyone can simply play on a laptop, no hassle.' },
+                { label: 'Building the game in Unity', desc: 'I built the haunted house itself in Unity. The player walks through the house, finds a key and has to escape before the zombies catch them. It was only my second time working with Unity. I used tutorials, asked my teacher for help and challenged myself by adding extra interaction, like actually being able to pick up the key instead of using a simple trigger zone.' },
+                { label: 'Companion app in Adobe XD', desc: 'To make the game truly exciting I designed a companion app in Adobe XD. Other players use their phone to control zombies that try to stop the main player in the house. I also added a heart rate monitor: whoever had the lowest heart rate while playing, won. Together with a self-made Snapchat filter, this created a complete, interactive game experience.' },
+                { label: 'Promo materials in Canva & expo', desc: 'For the promotion I designed an A3 concept poster, a promo video and social content in Canva to introduce the community. At the CMD Community Expo, visitors played the game live against each other. What I learned: I was sometimes so busy building that I forgot to keep actively asking the target group questions. Making assumptions is easy, but keep asking. It always gets you further.' }
+            ],
+            quote: 'Fear feels less scary when you share it together.',
+            quoteDesc: 'Whether you\'re social or not: by outsmarting the zombies together, you get to know a community better without even realizing it.'
+        },
+        colorPalette: [
+            { hex: '#0D0D0D', name: 'Duisternis' },
+            { hex: '#B41B1B', name: 'Bloedrood'  },
+            { hex: '#9E9E9E', name: 'Betongrijs' },
+            { hex: '#4A2C1A', name: 'Verrot Hout' }
+        ]
     },
     {
         num: '03',
-        title: 'Beeldtaal',
-        meta: 'Beeldtaal · 2026',
-        role: 'Onderzoek, Ontwerp',
-        desc: 'Drie opdrachten rond semiotiek, retorica en gestalt. Van het analyseren van een bestaande campagneposter tot het ontwerpen van mijn eigen poster over plasticvervuiling.',
+        title: 'Infinite Scroll',
+        meta: 'Webdesign · 2026',
+        tags: [],
+        role: 'Designer & Developer · Figma, HTML / CSS / JS',
+        desc: 'Je weet dat je moet stoppen. Toch scroll je door. Een website die social media verslaving niet uitlegt maar laat voelen.',
+        heroImage: 'projects/greep2.png',
+        mockupType: 'phone',
+        liveUrl: 'https://bashva.github.io/socialmediaverslaving/',
+        workImages: ['projects/degreep-1.png', 'projects/degreep-3.png', 'projects/degreep-6.png'],
         tasks: [
             {
-                label: 'Opdracht 01 · Semiotiek',
-                desc: 'Voor de semiotiek-opdracht koos ik schoenen als onderwerp en plaatste ze in drie totaal verschillende contexten. Dezelfde schoen, maar elke keer een andere betekenis. Ik voegde ook een indexicaal teken toe, iets wat naar iets anders verwijst zonder het direct te laten zien. Moddersporen bij de deur zeggen genoeg zonder dat je iemand hoeft te zien.'
+                label: 'Concept & onderzoek',
+                desc: 'Ik koos dit onderwerp omdat ik het zelf herken: \'s avonds scrollen en opeens is er een uur voorbij. Als basis gebruikte ik onderzoek over smartphoneverslaving en de technieken die sociale media platforms bewust inzetten. Ik werkte drie kleurpaletten uit en koos voor een donkere digitale sfeer die past bij dat gevoel van \'s nachts eindeloos door een feed gaan.'
             },
             {
-                label: 'Opdracht 02 · Retorica',
-                desc: 'Voor retorica analyseerde ik de WWF-poster "Out of the Plastic Trap". Ik keek hoe ze overtuiging, timing en stijl gebruiken om de boodschap te versterken. Daarna maakte ik een verbeterde versie: de schildpad verstikt nu echt door het plastic, de kleuren zijn feller en de tekst directer. Meer impact, sneller.'
+                label: 'Visueel ontwerp in Figma',
+                desc: 'In Figma ontwierp ik vijf visuele fases die de escalatie van scrollen laten voelen: rust, scrollen, verslaving, chaos en overload. Elke fase heeft een eigen kleurpalet en sfeer die steeds drukker en onrustiger wordt. Donkere achtergronden met paarse en roze accenten refereren aan schermlicht en notificaties in het donker. Ik was hier zowel conceptontwikkelaar als visueel ontwerper.'
             },
             {
-                label: 'Eindoplevering · Eigen poster',
-                desc: 'Als eindopdracht maakte ik mijn eigen poster over plasticvervuiling, gericht op jongeren. De poster is opgesplitst: aan de ene kant een vervuilde wereld, aan de andere schone natuur. De schildpad staat voor alles wat er misgaat, en de boodschap "Plastic? Niet met mij!" maakt het persoonlijk.'
+                label: 'Ontwikkeling',
+                desc: 'Ik bouwde de volledige website zelf in HTML, CSS en JavaScript. De feed begint rustig: gewone posts, normale snelheid. Hoe langer je scrollt, hoe meer likes, notificaties en content er verschijnen zonder dat je erom vraagt. Timing-functies in JavaScript laten de animaties geleidelijk sneller en drukker worden. De overgang is subtiel genoeg dat je hem niet ziet aankomen.'
+            },
+            {
+                label: 'Publicatie & reflectie',
+                desc: 'De website staat live op GitHub Pages. Bij test-sessies bleek dat gebruikers de overgang naar chaos eerder ervoeren dan ik had verwacht. Dat was precies het doel. Dit project liet me zien hoe bewust en hoe gevaarlijk design ingezet kan worden. De technieken die grote apps verslavend maken zijn niet geheim. Ik kon ze zelf inbouwen.'
             }
         ],
-        images: [
-            'projects/beeldtaal-1.png',
-            'projects/beeldtaal-3.png',
-            'projects/beeldtaal-5.png',
+        quote: 'Jij denkt dat je scrollt, maar de interface stuurt jou.',
+        quoteDesc: 'Dit project liet me zien hoe krachtig en gevaarlijk design kan zijn. De technieken die apps verslavend maken, kon ik zelf inbouwen.',
+        en: {
+            desc: 'You know you should stop. Yet you keep scrolling. A website that doesn\'t explain social media addiction. It makes you feel it.',
+            role: 'Designer & Developer · Figma, HTML / CSS / JS',
+            tasks: [
+                { label: 'Concept & research', desc: 'I chose this topic because I recognize it myself: scrolling in the evening and suddenly an hour has passed. As a foundation I used research on smartphone addiction and the techniques social media platforms deliberately deploy. I worked out three color palettes and chose a dark digital atmosphere that fits that feeling of endlessly scrolling through a feed at night.' },
+                { label: 'Visual design in Figma', desc: 'In Figma I designed five visual phases that make the escalation of scrolling felt: rest, scrolling, addiction, chaos and overload. Each phase has its own color palette and atmosphere that grows increasingly busy and restless. Dark backgrounds with purple and pink accents reference screen light and notifications in the dark.' },
+                { label: 'Development', desc: 'I built the entire website in HTML, CSS and JavaScript. The feed starts calm: regular posts, normal speed. The longer you scroll, the more likes, notifications and content appear without you asking for it. Timing functions in JavaScript let animations gradually become faster and more intense. The transition is subtle enough that you don\'t see it coming.' },
+                { label: 'Publication & reflection', desc: 'The website is live on GitHub Pages. During test sessions, users experienced the transition to chaos earlier than I expected. That was exactly the goal. This project showed me how deliberately and dangerously design can be used. The techniques that make large apps addictive are no secret. I could build them myself.' }
+            ],
+            quote: 'You think you\'re scrolling, but the interface is directing you.',
+            quoteDesc: 'This project showed me how powerful and dangerous design can be. The techniques that make apps addictive. I could build them myself.'
+        },
+        colorPalette: [
+            { hex: '#0F0B1A', name: 'Diepte'            },
+            { hex: '#7B3FA8', name: 'Dopamine Paars'    },
+            { hex: '#E03B8A', name: 'Notificatie Roze'  },
+            { hex: '#00CFCF', name: 'Scherm Cyaan'      }
         ],
-        collage3: true
+        typography: {
+            name: 'SF Pro Display',
+            specimen: 'De Greep',
+            weights: [
+                { label: 'Bold',    value: 700 },
+                { label: 'Regular', value: 400 },
+                { label: 'Light',   value: 300 }
+            ]
+        },
     },
     {
         num: '04',
-        title: 'Interface & Beweging',
-        meta: 'Interface & Beweging · 2026',
-        role: 'Cavalry, Figma',
-        desc: 'Een geanimeerd Lego-poppetje in Cavalry, met drie knoppen die elk een andere beweging starten. Van eerste schets tot werkende interactieve animatie.',
+        title: 'Boekenzoeker',
+        meta: 'UI Design · Adobe XD · 2024',
+        tags: ['UI Design', 'Adobe XD', '2024'],
+        role: 'Visual Interface Design · Adobe XD',
+        desc: 'Een iPad-kiosk app voor de schoolbibliotheek van de Gemeente Amsterdam. Leerlingen van 12 tot 15 jaar vinden snel een boek dat bij ze past door een paar voorkeuren in te stellen, en zetten geschikte titels op een verlanglijst die ze kunnen mailen.',
+        heroImage: 'projects/boekensite.jpg',
+        workVideo: 'projects/boekenzoeker-web.mp4',
+        workImages: ['projects/boekenlijst.png', 'projects/boekinfo.png', 'projects/sorterenboeken.png'],
         tasks: [
             {
-                label: 'Concept & technisch onderzoek',
-                desc: 'Ik keek naar meerdere concepten, van een alien tot een robot, maar koos uiteindelijk voor het Lego-poppetje. Herkenbaar, simpele vormen en makkelijk te animeren. Ik deed onderzoek naar Cavalry en de geschiedenis van het poppetje, dat al sinds 1978 bestaat. Juist die eenvoud maakt het interessant om mee te werken.'
+                label: 'Opdracht & doelgroep',
+                desc: 'De opdracht was een zoekinterface ontwerpen voor de schoolbieb, bedoeld voor leerlingen van klas 1 tot 3. De app draait op een vaste iPad bij de ingang. Mijn vertrekpunt was: hoe maak je zoeken naar een boek zo laagdrempelig dat je er nauwelijks over hoeft na te denken? Geen zoekbalk vol typen, maar gewoon een paar keuzes tikken en een persoonlijk lijstje krijgen.'
             },
             {
-                label: 'Moving icons & storyboard',
-                desc: 'Ik ontwierp drie knoppen in Figma die elk een andere animatie starten. Bij hover verandert de achtergrond en speelt er een laadanimatie af. In mijn storyboard werkte ik de drie bewegingen uit: een blokje opgooien en vangen, het poppetje uit elkaar laten vallen, en een pet die via zijn voeten op zijn hoofd landt.'
+                label: 'Visuele stijl & substijl',
+                desc: 'Ik werkte binnen de huisstijl van de Gemeente Amsterdam maar ontwikkelde daar een eigen substijl in die de doelgroep aanspreekt. Speelse illustraties, heldere kleuren en een apegidsfiguur geven de app een vriendelijk en uitnodigend karakter. Elke kleur- en lettertypekeuze is bewust gemaakt: herkenbaar genoeg voor de gemeente, aantrekkelijk genoeg voor een 13-jarige.'
             },
             {
-                label: 'Eindproduct · Animatie in Cavalry',
-                desc: 'Het eindresultaat is een volledig geanimeerd poppetje in Cavalry. Druk je op een knop, dan speelt de bijbehorende animatie. Cavalry heeft nauwelijks tutorials, dus het was echt uitzoeken. Maar het werkte: herhaalbare bewegingen en speelse animaties die het poppetje echt tot leven brengen.'
+                label: 'Schermontwerpen',
+                desc: 'Ik ontwierp de volledige flow in Adobe XD: van boektype kiezen (e-book, normaal boek, luisterboek) en voorkeuren instellen, tot een gesorteerde resultatenlijst met boekcovers, een detailpagina per boek en een verlanglijst die je kunt mailen. Elk scherm moest zelfstandig begrijpelijk zijn omdat er geen instructie is bij het kiosk.'
+            },
+            {
+                label: 'Prototype & presentatie',
+                desc: 'Het eindresultaat is een volledig klikbaar prototype in Adobe XD dat de gehele gebruikersstroom doorloopt. Bij de beoordeling presenteerde ik mijn schermontwerpen en stilistische keuzes aan de hand van een stijlblad en een demonstratie van de interactie. Dit project leerde me hoe je een functioneel en een visueel ontwerp tegelijkertijd kunt opbouwen zonder dat een van de twee achterloopt.'
             }
         ],
-        images: [
-            'projects/interface-1.png',
-            'projects/interface-3.png',
+        quote: 'Goed design vraagt geen uitleg.',
+        quoteDesc: 'Een kiosk heeft geen handleiding. Als een leerling bij de ingang van de bieb staat en het niet meteen snapt, haakt hij af. Dat dwong me om elk scherm zo helder mogelijk te maken.',
+        en: {
+            desc: 'An iPad kiosk app for the school library of the Municipality of Amsterdam. Students aged 12 to 15 quickly find a book that suits them by setting a few preferences, and add suitable titles to a wish list they can email.',
+            role: 'Visual Interface Design · Adobe XD',
+            tasks: [
+                { label: 'Assignment & target group', desc: 'The assignment was to design a search interface for the school library, aimed at students in years 1 to 3. The app runs on a fixed iPad at the entrance. My starting point: how do you make finding a book so accessible that you barely have to think about it? No typing in a search bar, just tap a few choices and get a personal list.' },
+                { label: 'Visual style & sub-style', desc: 'I worked within the Municipality of Amsterdam\'s brand identity but developed my own sub-style that appeals to the target group. Playful illustrations, bright colors and a guide character give the app a friendly and inviting character. Every color and typeface choice was deliberate: recognizable enough for the municipality, attractive enough for a 13-year-old.' },
+                { label: 'Screen designs', desc: 'I designed the full flow in Adobe XD: from choosing book type (e-book, physical book, audiobook) and setting preferences, to a sorted results list with book covers, a detail page per book and a wish list you can email. Every screen had to be independently understandable since there\'s no instruction at the kiosk.' },
+                { label: 'Prototype & presentation', desc: 'The end result is a fully clickable prototype in Adobe XD covering the entire user flow. During the assessment I presented my screen designs and stylistic choices via a style sheet and an interaction demo. This project taught me how to build a functional and visual design simultaneously without either falling behind.' }
+            ],
+            quote: 'Good design needs no explanation.',
+            quoteDesc: 'A kiosk has no manual. If a student at the library entrance doesn\'t immediately get it, they walk away. That forced me to make every screen as clear as possible.'
+        },
+        colorPalette: [
+            { hex: '#EC0000', name: 'Amsterdam Rood' },
+            { hex: '#7B9C67', name: 'Bibliotheek Groen' },
+            { hex: '#FFFFFF', name: 'Wit' }
         ],
-        video: 'projects/interface-video.mp4'
-    },
-    {
-        num: '05',
-        title: 'De Meesterproef',
-        meta: 'Meesterproef · 2026',
-        role: 'Figma, HTML / CSS / JS',
-        desc: 'Een interactieve website over social media verslaving. Je ervaart zelf hoe scrollen langzaam verandert in iets waar je geen controle meer over hebt.',
-        tasks: [
-            {
-                label: 'Concept & visueel onderzoek',
-                desc: 'Ik koos dit onderwerp omdat ik het zelf herken en ook om mij heen zie. Als basis gebruikte ik een artikel van het AD over smartphoneverslaving. Ik maakte drie kleurpaletten en koos voor een donkere, digitale sfeer die past bij \'s avonds eindeloos scrollen. Het moodboard laat de opbouw zien: van rustig en normaal naar compleet chaos.'
-            },
-            {
-                label: 'Interface ontwerp · Figma',
-                desc: 'In Figma werkte ik de vijf fases uit: rust, scrollen, verslaving, chaos en overload. Elke fase heeft een eigen sfeer die steeds drukker wordt. Donkere kleuren met paarse en roze accenten, die doen denken aan schermlicht en notificaties. Hoe verder je komt, hoe meer visuele prikkels.'
-            },
-            {
-                label: 'Eindproduct · Interactieve website',
-                desc: 'Het eindproduct is een werkende website gebouwd in HTML, CSS en JavaScript. Het begint als een gewone feed, maar hoe langer je scrollt, hoe meer likes, notificaties en posts er verschijnen zonder dat je erom vraagt. De animaties worden sneller en drukker. Het idee: jij denkt dat je scrollt, maar de interface stuurt jou.',
-            }
-        ],
-        liveUrl: 'https://bashva.github.io/socialmediaverslaving/',
-        images: [
-            'projects/figma-1.png',
-            'projects/figma-2.png',
-            'projects/figma-3.png',
-            'projects/degreep-1.png',
-            'projects/degreep-2.png',
-            'projects/degreep-3.png',
-            'projects/degreep-4.png',
-            'projects/degreep-5.png',
-            'projects/degreep-6.png',
-        ],
-        collage3col: true,
-        video: 'projects/socialmediaverslaving.mp4'
+        typography: {
+            name: 'Amsterdam Sans',
+            specimen: 'Zoek een boek',
+            weights: [
+                { label: 'Bold',    value: 700 },
+                { label: 'Regular', value: 400 }
+            ]
+        }
     }
 ];
 
-const projOverlay = document.getElementById('projOverlay');
-const poClose     = document.getElementById('poClose');
-const poNum       = document.getElementById('poNum');
-const poTitle     = document.getElementById('poTitle');
-const poMeta      = document.getElementById('poMeta');
-const poRole      = document.getElementById('poRole');
-const poMedia     = document.getElementById('poMedia');
-const poDesc      = document.getElementById('poDesc');
-const poTasks     = document.getElementById('poTasks');
+const projOverlay  = document.getElementById('projOverlay');
+const poClose      = document.getElementById('poClose');
+const poNum        = document.getElementById('poNum');
+const poHeroR      = document.getElementById('poHeroR');
+const poMeta       = document.getElementById('poMeta');
+const poTitle      = document.getElementById('poTitle');
+const poTags       = document.getElementById('poTags');
+const poRole       = document.getElementById('poRole');
+const poLiveBtn    = document.getElementById('poLiveBtn');
+const poDesc       = document.getElementById('poDesc');
+const poTasks      = document.getElementById('poTasks');
+const poWork       = document.getElementById('poWork');
+const poWorkImgs   = document.getElementById('poWorkImgs');
+const poQuoteBlock = document.getElementById('poQuoteBlock');
+const poQuoteText  = document.getElementById('poQuoteText');
+const poQuoteSub   = document.getElementById('poQuoteSub');
+const poProtoWrap  = document.getElementById('poProtoWrap');
+const poProtoBtn   = document.getElementById('poProtoBtn');
+const poProtoLabel = document.getElementById('poProtoLabel');
+const poNext       = document.getElementById('poNext');
+const poNextTitle  = document.getElementById('poNextTitle');
+
+function makeBrowserFrame(imgSrc, cssClass, aspect, cover, fit, position) {
+    const bodyClass = (aspect && cover) ? 'po-bc-body po-bc-body--fixed' : 'po-bc-body';
+    const bodyStyle = aspect ? ` style="aspect-ratio:${aspect}"` : '';
+    const imgStyles = [fit ? `object-fit:${fit}` : '', position ? `object-position:${position}` : ''].filter(Boolean).join(';');
+    const imgStyle  = imgStyles ? ` style="${imgStyles}"` : '';
+    return `<div class="po-browser">
+        <div class="po-bc">
+            <span class="po-bc-dot"></span>
+            <span class="po-bc-dot"></span>
+            <span class="po-bc-dot"></span>
+            <div class="po-bc-url"></div>
+        </div>
+        <div class="${bodyClass}"${bodyStyle}>
+            <img src="${imgSrc}" class="${cssClass}" alt=""${imgStyle}>
+        </div>
+    </div>`;
+}
+
+function makeBrowserVideoFrame(videoSrc) {
+    return `<div class="po-browser po-browser-video">
+        <div class="po-bc">
+            <span class="po-bc-dot"></span>
+            <span class="po-bc-dot"></span>
+            <span class="po-bc-dot"></span>
+            <div class="po-bc-url"></div>
+        </div>
+        <div class="po-bc-body">
+            <video class="po-work-video" src="${videoSrc}" controls preload="metadata"></video>
+        </div>
+    </div>`;
+}
+
+function makePhoneFrame(imgSrc) {
+    return `<div class="po-phone-mock">
+        <div class="po-phone-top"><div class="po-phone-island"></div></div>
+        <div class="po-phone-screen"><img src="${imgSrc}" alt=""></div>
+        <div class="po-phone-bottom"><div class="po-phone-home"></div></div>
+    </div>`;
+}
+
+function makeWorkPhoneFrame(imgSrc) {
+    return `<div class="po-work-phone">
+        <div class="po-wp-top"><div class="po-wp-island"></div></div>
+        <div class="po-wp-screen"><img src="${imgSrc}" alt=""></div>
+        <div class="po-wp-bottom"><div class="po-wp-home"></div></div>
+    </div>`;
+}
+
+let _openProjectIdx = null;
 
 function openProject(idx) {
     const p = projectData[idx];
     if (!p || !projOverlay) return;
+    _openProjectIdx = idx;
+
+    const en = (_lang === 'en' && p.en) ? p.en : null;
+    const pt = (nl, key) => (en && en[key] != null) ? en[key] : nl;
+    const ptasks = (en && en.tasks) ? en.tasks : (p.tasks || []);
+
     poNum.textContent   = p.num;
+    const ghost = document.getElementById('poNumGhost');
+    if (ghost) ghost.textContent = p.num;
     poTitle.textContent = p.title;
-    poMeta.textContent  = p.meta;
-    poRole.textContent  = p.role;
-    poDesc.textContent  = p.desc;
+    poRole.textContent  = pt(p.role, 'role');
+    poDesc.textContent  = pt(p.desc, 'desc');
+    if (poMeta) poMeta.textContent = p.meta || '';
+
+    if (poHeroR) {
+        if (p.heroImage) {
+            poHeroR.innerHTML = p.mockupType === 'phone'
+                ? makePhoneFrame(p.heroImage)
+                : makeBrowserFrame(p.heroImage, '');
+        } else {
+            poHeroR.innerHTML = '';
+        }
+    }
+
+    if (poTags) {
+        poTags.innerHTML = (p.tags || []).map(t => `<span class="po-tag">${t}</span>`).join('');
+    }
+
+    if (poLiveBtn) {
+        poLiveBtn.style.display = p.liveUrl ? 'inline-flex' : 'none';
+        if (p.liveUrl) poLiveBtn.href = p.liveUrl;
+    }
 
     if (poTasks) {
-        poTasks.innerHTML = p.tasks
-            ? p.tasks.map(t => `<div class="po-task${t.image ? ' po-task-split' : ''}">
-                <div class="po-task-text">
-                    <span class="po-task-label">${t.label}</span>
-                    <p class="po-task-desc">${t.desc}</p>
-                </div>
-                ${t.image ? `<img src="${t.image}" class="po-task-img" alt="${t.label}">` : ''}
-              </div>`).join('')
-            : '';
+        poTasks.innerHTML = ptasks.map((t, i) => `
+            <div class="po-proc-item">
+                <span class="po-proc-num">0${i + 1}</span>
+                <h3 class="po-proc-heading">${t.label}</h3>
+                <p class="po-proc-body">${t.desc}</p>
+            </div>`).join('');
     }
 
-    if (p.images && p.images.length) {
-        poMedia.classList.add('has-imgs');
-        const imgs = p.images;
-        if (p.collage && imgs.length === 5) {
-            const cg = imgs.slice(0, 4).map((s, i) =>
-                `<img src="${s}" class="po-cg po-cg-${i + 1}" alt="">`
-            ).join('');
-            poMedia.innerHTML = `
-                <div class="po-collage">
-                    ${cg}
-                    <div class="po-cside-wrap"><img src="${imgs[4]}" class="po-cside-g" alt="${p.title}"></div>
-                </div>`;
-        } else if (p.collage4 && imgs.length === 4) {
-            const cg = imgs.map(s => `<img src="${s}" class="po-cg4" alt="">`).join('');
-            poMedia.innerHTML = `<div class="po-collage-4">${cg}</div>`;
-        } else if (p.collage3 && imgs.length === 3) {
-            const cg = imgs.map(s => `<img src="${s}" class="po-c3" alt="">`).join('');
-            poMedia.innerHTML = `<div class="po-collage-3">${cg}</div>`;
-        } else if (p.collage3col) {
-            const cg = imgs.map(s => `<img src="${s}" class="po-cgrid" alt="">`).join('');
-            poMedia.innerHTML = `<div class="po-collage-3">${cg}</div>`;
+    if (poWork && poWorkImgs) {
+        const imgs = p.workImages || [];
+        if (imgs.length || p.workVideo || p.boothImage) {
+            poWork.style.display = '';
+            if (p.mockupType === 'phone') {
+                poWorkImgs.className = 'po-work-grid phone-grid';
+                poWorkImgs.innerHTML = imgs.map(src => makeWorkPhoneFrame(src)).join('');
+            } else {
+                poWorkImgs.className = p.constrainGrid ? 'po-work-grid constrained' : 'po-work-grid';
+                if (p.gridAspect) poWorkImgs.style.setProperty('--grid-aspect', p.gridAspect);
+                else poWorkImgs.style.removeProperty('--grid-aspect');
+                const videoHtml = p.workVideo ? makeBrowserVideoFrame(p.workVideo) : '';
+                const imgsHtml = imgs.map((src, i) => {
+                    const label  = (p.workImageLabels  || [])[i];
+                    const aspect = (p.workImageAspects || [])[i];
+                    const cover  = (p.workImageCovers  || [])[i];
+                    const fit      = (p.workImageFits      || [])[i];
+                    const position = (p.workImagePositions || [])[i];
+                    const frame    = makeBrowserFrame(src, 'po-work-img', aspect, cover, fit, position);
+                    return label
+                        ? `<div class="po-work-tile">${frame}<p class="po-work-label">${label}</p></div>`
+                        : frame;
+                }).join('');
+                const expoHtml = p.boothImage
+                    ? `<div class="po-work-expo">${makeBrowserFrame(p.boothImage, 'po-work-img')}<p class="po-work-caption">${pt(p.boothCaption || '', 'boothCaption')}</p></div>`
+                    : '';
+                poWorkImgs.innerHTML = videoHtml + imgsHtml + expoHtml;
+            }
         } else {
-            poMedia.innerHTML = imgs.map((s, i) =>
-                `<img src="${s}" class="${i === 0 ? 'po-img-hero' : 'po-img'}" alt="${i === 0 ? p.title : ''}">`
-            ).join('');
+            poWork.style.display = 'none';
         }
-        if (p.video) {
-            poMedia.innerHTML += `<video class="po-video" controls playsinline>
-                <source src="${p.video}" type="video/mp4">
-            </video>`;
-        }
-        poMedia.style.background = '';
-        poMedia.style.color = '';
-    } else {
-        poMedia.classList.remove('has-imgs');
-        poMedia.innerHTML = '';
-        poMedia.style.background = p.bg || 'var(--sur)';
-        poMedia.style.color      = p.color || 'var(--text)';
     }
+
+    const poDesignEl = document.getElementById('poDesignEl');
+    const poTypoGrid = document.getElementById('poTypoGrid');
+    if (poDesignEl && poTypoGrid) {
+        if (p.typography) {
+            poDesignEl.style.display = '';
+            const t = p.typography;
+            poTypoGrid.innerHTML = `
+                <div class="po-type-card">
+                    <div class="po-type-left">
+                        <span class="po-type-name">${t.name}</span>
+                        <div class="po-type-big">${t.specimen}</div>
+                    </div>
+                    <div class="po-type-right">
+                        <div class="po-type-scale">
+                            ${t.weights.map(w => `
+                                <div class="po-type-scale-row">
+                                    <span class="po-type-wlabel">${w.label}</span>
+                                    <span class="po-type-wsample" style="font-weight:${w.value}">${t.specimen}</span>
+                                </div>`).join('')}
+                        </div>
+                        ${t.tagline ? `<div class="po-type-rule"></div><p class="po-type-tagline">${t.tagline}</p><p class="po-type-desc">${t.desc || ''}</p>` : ''}
+                    </div>
+                </div>
+                ${t.body ? `
+                <div class="po-type-body-row">
+                    <div class="po-type-body-meta">
+                        <span class="po-type-name">${t.body.name}</span>
+                        <span class="po-type-usage">${t.body.usage}</span>
+                    </div>
+                    ${t.body.weights.map(w => `
+                        <div class="po-type-body-col">
+                            <span class="po-type-wlabel">${w.label}</span>
+                            <span class="po-type-wsample" style="font-weight:${w.value};font-family:${t.body.fontStack}">Premium single origin coffee.</span>
+                        </div>`).join('')}
+                </div>` : ''}`;
+        } else {
+            poDesignEl.style.display = 'none';
+            if (poTypoGrid) poTypoGrid.innerHTML = '';
+        }
+    }
+
+    const poPaletteGrid = document.getElementById('poPaletteGrid');
+    if (poPaletteGrid) {
+        if (p.colorPalette && p.colorPalette.length) {
+            if (poDesignEl) poDesignEl.style.display = '';
+            poPaletteGrid.innerHTML = p.colorPalette.map(c => `
+                <div class="po-swatch">
+                    <div class="po-swatch-color" style="background:${c.hex}">
+                        ${c.pct ? `<span class="po-swatch-pct">${c.pct}</span>` : ''}
+                    </div>
+                    <span class="po-swatch-hex">${c.hex}</span>
+                    <span class="po-swatch-name">${c.name}</span>
+                </div>`).join('');
+        } else {
+            if (poPaletteGrid) poPaletteGrid.innerHTML = '';
+        }
+    }
+
+    if (poQuoteBlock) {
+        if (p.quote) {
+            poQuoteBlock.style.display = '';
+            poQuoteText.textContent = pt(p.quote, 'quote');
+            poQuoteSub.textContent  = pt(p.quoteDesc || '', 'quoteDesc');
+        } else {
+            poQuoteBlock.style.display = 'none';
+        }
+    }
+
+    if (poProtoWrap && poProtoBtn) {
+        if (p.figmaUrl) {
+            poProtoWrap.style.display = '';
+            poProtoBtn.href = p.figmaUrl;
+            if (poProtoLabel) poProtoLabel.textContent = p.protoLabel || 'Bekijk prototype';
+        } else {
+            poProtoWrap.style.display = 'none';
+        }
+    }
+
+    if (poNext && poNextTitle) {
+        const nextIdx = (idx + 1) % projectData.length;
+        poNextTitle.textContent = projectData[nextIdx].title.toUpperCase();
+        poNext.onclick = () => {
+            const poContent = projOverlay.querySelector('.po-content');
+            const poScroll  = projOverlay.querySelector('.po-scroll');
+            poContent.classList.add('po-exit');
+
+            setTimeout(() => {
+                if (poScroll) poScroll.scrollTop = 0;
+                poContent.classList.remove('po-exit');
+                poContent.classList.add('po-enter');
+                openProject(nextIdx);
+                requestAnimationFrame(() => requestAnimationFrame(() => {
+                    poContent.classList.remove('po-enter');
+                }));
+            }, 250);
+        };
+    }
+
+    const poScroll = projOverlay.querySelector('.po-scroll');
+    if (poScroll) poScroll.scrollTop = 0;
+
+    // Scroll reveal — bidirectioneel
+    if (window._revealObserver) window._revealObserver.disconnect();
+    setTimeout(() => {
+        const scrollEl = projOverlay.querySelector('.po-scroll');
+        if (!scrollEl) return;
+
+        const selectors = [
+            '.po-split-hd',
+            '.po-proc-item',
+            '.po-work-tile, .po-work-grid > .po-browser, .po-browser-video',
+            '.po-work-expo',
+            '.po-swatch',
+            '.po-type-card',
+            '.po-type-body-row',
+            '.po-quote-block',
+            '.po-proto-wrap',
+            '.po-next'
+        ];
+        const animEls = projOverlay.querySelectorAll(selectors.join(', '));
+
+        animEls.forEach((el, i) => {
+            el.classList.add('po-reveal');
+            el.style.setProperty('--ri', i % 4);
+        });
+
+        window._revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const el = entry.target;
+                if (entry.isIntersecting) {
+                    el.classList.add('is-visible');
+                    el.classList.remove('is-past');
+                } else {
+                    const above = entry.boundingClientRect.top < entry.rootBounds.top;
+                    if (above) {
+                        el.classList.add('is-past');
+                        el.classList.remove('is-visible');
+                    } else {
+                        el.classList.remove('is-visible', 'is-past');
+                    }
+                }
+            });
+        }, { root: scrollEl, threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        animEls.forEach(el => window._revealObserver.observe(el));
+    }, 400);
 
     projOverlay.classList.add('open');
     projOverlay.setAttribute('aria-hidden', 'false');
@@ -521,21 +844,28 @@ function openProject(idx) {
 
 function closeProject() {
     if (!projOverlay) return;
+    _openProjectIdx = null;
     projOverlay.classList.remove('open');
     projOverlay.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
-    setTimeout(() => { poMedia.innerHTML = ''; poMedia.classList.remove('has-imgs'); }, 800);
+    if (window._revealObserver) { window._revealObserver.disconnect(); window._revealObserver = null; }
 }
 
 if (poClose) poClose.addEventListener('click', closeProject);
+const poBack = document.getElementById('poBack');
+if (poBack) poBack.addEventListener('click', closeProject);
 
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && projOverlay && projOverlay.classList.contains('open')) closeProject();
 });
 
-document.querySelectorAll('.pcard').forEach((card, i) => {
-    card.addEventListener('click', () => openProject(i));
+
+document.querySelectorAll('.pcard[data-project]').forEach(card => {
+    const idx = parseInt(card.dataset.project, 10);
+    card.addEventListener('click', () => openProject(idx));
 });
+
+
 
 
 /* ────────────────────────────────────────────
@@ -558,6 +888,26 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
         window.location.href = link.getAttribute('href');
     });
 });
+
+
+/* ────────────────────────────────────────────
+   LANGUAGE TOGGLE  NL ↔ EN
+   ──────────────────────────────────────────── */
+const langBtn = document.getElementById('langBtn');
+let _lang = 'nl';
+
+function setLang(lang) {
+    _lang = lang;
+    if (langBtn) langBtn.textContent = lang === 'nl' ? 'EN' : 'NL';
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(el => {
+        if (!el.dataset.nl) el.dataset.nl = el.innerHTML;
+        el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.nl;
+    });
+    if (typeof _openProjectIdx === 'number') openProject(_openProjectIdx);
+}
+
+if (langBtn) langBtn.addEventListener('click', () => setLang(_lang === 'nl' ? 'en' : 'nl'));
 
 
 /* ────────────────────────────────────────────

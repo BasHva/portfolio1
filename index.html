@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bas Witmond — Portfolio</title>
+    <title>Bas Witmond | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="loading">
@@ -34,9 +34,10 @@
     <nav class="nav" id="nav">
         <a href="#" class="nav-brand">Bas Witmond</a>
         <div class="nav-links">
-            <a href="#work" class="nav-link">Werk</a>
-            <a href="#about" class="nav-link">Over</a>
+            <a href="#work" class="nav-link" data-en="Work">Werk</a>
+            <a href="#about" class="nav-link" data-en="About">Over</a>
             <a href="#contact" class="nav-link nav-cta magnetic">Contact</a>
+            <button class="lang-btn" id="langBtn" aria-label="Switch language">EN</button>
         </div>
     </nav>
 
@@ -59,7 +60,14 @@
                 </div>
                 <div class="hs-r">
                     <span class="avdot"></span>
-                    <span>Beschikbaar voor afstudeerstage</span>
+                    <span data-en="Available for internship">Beschikbaar voor afstudeerstage</span>
+                    <div class="avail-badge">
+                        <div class="avail-badge-row">
+                            <span class="avail-badge-dot"></span>
+                            <span class="avail-badge-title" data-en="Open to work">Open voor werk</span>
+                        </div>
+                        <div class="avail-badge-sub" data-en="Graduation internship · Sept 2026">Afstudeerstage · sept 2026</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,22 +77,30 @@
     <!-- ═══════ MARQUEE ═══════ -->
     <div class="marquee-block" aria-hidden="true">
         <div class="mtrack">
-            <span>TYPOGRAFIE</span><span class="msep">✦</span>
-            <span>BRANDING</span><span class="msep">✦</span>
             <span>UI DESIGN</span><span class="msep">✦</span>
-            <span>MOTION</span><span class="msep">✦</span>
-            <span>IDENTITEIT</span><span class="msep">✦</span>
-            <span>PRINT</span><span class="msep">✦</span>
-            <span>GRID SYSTEMS</span><span class="msep">✦</span>
-            <span>ART DIRECTION</span><span class="msep">✦</span>
-            <span>TYPOGRAFIE</span><span class="msep">✦</span>
-            <span>BRANDING</span><span class="msep">✦</span>
+            <span>GAME DESIGN</span><span class="msep">✦</span>
+            <span data-en="USER RESEARCH">GEBRUIKERSONDERZOEK</span><span class="msep">✦</span>
+            <span data-en="VISUAL IDENTITY">VISUELE IDENTITEIT</span><span class="msep">✦</span>
+            <span>INTERACTION DESIGN</span><span class="msep">✦</span>
+            <span>PROTOTYPING</span><span class="msep">✦</span>
+            <span data-en="TYPOGRAPHY">TYPOGRAFIE</span><span class="msep">✦</span>
+            <span data-en="CONCEPT DEVELOPMENT">CONCEPT ONTWIKKELING</span><span class="msep">✦</span>
+            <span>APP DESIGN</span><span class="msep">✦</span>
+            <span data-en="COLOR THEORY">KLEURTHEORIE</span><span class="msep">✦</span>
+            <span>WEBDESIGN</span><span class="msep">✦</span>
+            <span data-en="PRESENTING">PRESENTEREN</span><span class="msep">✦</span>
             <span>UI DESIGN</span><span class="msep">✦</span>
-            <span>MOTION</span><span class="msep">✦</span>
-            <span>IDENTITEIT</span><span class="msep">✦</span>
-            <span>PRINT</span><span class="msep">✦</span>
-            <span>GRID SYSTEMS</span><span class="msep">✦</span>
-            <span>ART DIRECTION</span><span class="msep">✦</span>
+            <span>GAME DESIGN</span><span class="msep">✦</span>
+            <span data-en="USER RESEARCH">GEBRUIKERSONDERZOEK</span><span class="msep">✦</span>
+            <span data-en="VISUAL IDENTITY">VISUELE IDENTITEIT</span><span class="msep">✦</span>
+            <span>INTERACTION DESIGN</span><span class="msep">✦</span>
+            <span>PROTOTYPING</span><span class="msep">✦</span>
+            <span data-en="TYPOGRAPHY">TYPOGRAFIE</span><span class="msep">✦</span>
+            <span data-en="CONCEPT DEVELOPMENT">CONCEPT ONTWIKKELING</span><span class="msep">✦</span>
+            <span>APP DESIGN</span><span class="msep">✦</span>
+            <span data-en="COLOR THEORY">KLEURTHEORIE</span><span class="msep">✦</span>
+            <span>WEBDESIGN</span><span class="msep">✦</span>
+            <span data-en="PRESENTING">PRESENTEREN</span><span class="msep">✦</span>
         </div>
     </div>
 
@@ -100,122 +116,94 @@
     <!-- ═══════ WERK ═══════ -->
     <section class="section" id="work">
         <div class="section-head">
-            <span class="section-lbl ri">01 WERK</span>
-            <h2 class="section-title split-reveal">Projecten.</h2>
+            <span class="section-lbl ri" data-en="01 WORK">01 WERK</span>
+            <h2 class="section-title split-reveal" data-nl="Projecten." data-en="Projects.">Projecten.</h2>
         </div>
         <div class="projects-grid">
 
-            <article class="pcard ri">
+            <article class="pcard ri" data-project="0">
                 <div class="pcard-media">
                     <div class="laptop-mock">
                         <div class="lm-lid">
                             <div class="lm-cam"></div>
                             <div class="lm-screen">
-                                <img src="projects/game-1.png" class="lm-shot" alt="Typografie">
+                                <img src="projects/brew-1.png" class="lm-shot" alt="Morning Brew">
                             </div>
                         </div>
                         <div class="lm-base"></div>
                     </div>
                     <div class="pcard-badge">
                         <span class="pb-num">01</span>
-                        <span class="pb-title">Typografie</span>
+                        <span class="pb-title">Morning Brew</span>
                     </div>
                 </div>
                 <div class="pcard-meta">
-                    <h3>Typografie</h3>
-                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                    <h3>Morning Brew</h3>
+                    <div class="pcard-info"><span>UI Design</span><span>2026</span></div>
                 </div>
             </article>
 
-            <article class="pcard ri">
+            <article class="pcard ri" data-project="1">
                 <div class="pcard-media">
                     <div class="laptop-mock">
                         <div class="lm-lid">
                             <div class="lm-cam"></div>
                             <div class="lm-screen">
-                                <img src="projects/brew-1.png" class="lm-shot" alt="Kleur & Compositie">
+                                <img src="projects/houseofhorror.png" class="lm-shot" alt="House of Horror">
                             </div>
                         </div>
                         <div class="lm-base"></div>
                     </div>
                     <div class="pcard-badge">
                         <span class="pb-num">02</span>
-                        <span class="pb-title">Kleur & Compositie</span>
+                        <span class="pb-title">House of Horror</span>
                     </div>
                 </div>
                 <div class="pcard-meta">
-                    <h3>Kleur &amp; Compositie</h3>
-                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                    <h3>House of Horror</h3>
+                    <div class="pcard-info"><span>Game Design</span><span>2024</span></div>
                 </div>
             </article>
 
-            <article class="pcard ri">
+            <article class="pcard ri" data-project="2">
                 <div class="pcard-media">
-                    <div class="laptop-mock">
-                        <div class="lm-lid">
-                            <div class="lm-cam"></div>
-                            <div class="lm-screen">
-                                <img src="projects/beeldtaal-5.png" class="lm-shot" alt="Beeldtaal">
-                            </div>
+                    <div class="card-phone">
+                        <div class="cp-mock">
+                            <div class="cp-top"><div class="cp-island"></div></div>
+                            <div class="cp-screen"><img src="projects/greep2.png" alt="Infinite Scroll"></div>
+                            <div class="cp-bottom"><div class="cp-home"></div></div>
                         </div>
-                        <div class="lm-base"></div>
                     </div>
                     <div class="pcard-badge">
                         <span class="pb-num">03</span>
-                        <span class="pb-title">Beeldtaal</span>
+                        <span class="pb-title">Infinite Scroll</span>
                     </div>
                 </div>
                 <div class="pcard-meta">
-                    <h3>Beeldtaal</h3>
-                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
+                    <h3>Infinite Scroll</h3>
+                    <div class="pcard-info"><span>Webdesign</span><span>2026</span></div>
                 </div>
             </article>
 
-            <article class="pcard ri">
+            <article class="pcard ri" data-project="3">
                 <div class="pcard-media">
                     <div class="laptop-mock">
                         <div class="lm-lid">
                             <div class="lm-cam"></div>
                             <div class="lm-screen">
-                                <img src="projects/interface-3.png" class="lm-shot" alt="Interface & Beweging">
+                                <img src="projects/boekensite.jpg" class="lm-shot" alt="Boekenzoeker">
                             </div>
                         </div>
                         <div class="lm-base"></div>
                     </div>
                     <div class="pcard-badge">
                         <span class="pb-num">04</span>
-                        <span class="pb-title">Interface & Beweging</span>
+                        <span class="pb-title">Boekenzoeker</span>
                     </div>
                 </div>
                 <div class="pcard-meta">
-                    <h3>Interface &amp; Beweging</h3>
-                    <div class="pcard-info"><span>Visual Interface Design</span><span>2026</span></div>
-                </div>
-            </article>
-
-            <article class="pcard pcard-wide ri">
-                <div class="pcard-media">
-                    <div class="pcw-center">
-                        <span class="pcw-label">Minor Visual Interface Design · Eindproject</span>
-                        <h2 class="pcw-heading">De Meesterproef</h2>
-                    </div>
-                    <div class="pcw-mock-right">
-                        <div class="lm-lid">
-                            <div class="lm-cam"></div>
-                            <div class="lm-screen">
-                                <img src="projects/degreep-1.png" class="lm-shot" alt="De Meesterproef">
-                            </div>
-                        </div>
-                        <div class="lm-base"></div>
-                    </div>
-                    <div class="pcard-badge">
-                        <span class="pb-num">05</span>
-                        <span class="pb-title">De Meesterproef</span>
-                    </div>
-                </div>
-                <div class="pcard-meta">
-                    <h3>De Meesterproef</h3>
-                    <div class="pcard-info"><span>Eindproject</span><span>2026</span></div>
+                    <h3>Boekenzoeker</h3>
+                    <div class="pcard-info"><span>UI Design</span><span>2024</span></div>
                 </div>
             </article>
 
@@ -225,41 +213,42 @@
     <!-- ═══════ OVER MIJ ═══════ -->
     <section class="section" id="about">
         <div class="section-head">
-            <span class="section-lbl ri">02 OVER MIJ</span>
+            <span class="section-lbl ri" data-en="02 ABOUT ME">02 OVER MIJ</span>
         </div>
         <div class="about-statement">
-            <p class="about-big split-reveal">Van idee tot iets waar ik<br><em>trots op ben.</em></p>
+            <p class="about-big split-reveal" data-nl="Van idee tot iets waar ik<br><em>trots op ben.</em>" data-en="From idea to something I'm&nbsp;<br><em>proud of.</em>">Van idee tot iets waar ik<br><em>trots op ben.</em></p>
         </div>
+
 
         <div class="about-facts">
             <div class="af-item ri">
                 <span class="af-num">01</span>
-                <p class="af-text">Ik ben Bas, derdejaars CMD-student aan de HvA Amsterdam. Ik ontwerp graag dingen die er niet alleen goed uitzien, maar ook echt ergens voor staan.</p>
+                <p class="af-text" data-en="I'm Bas, a third-year CMD student at HvA Amsterdam. I love designing things that don't just look good, but actually stand for something.">Ik ben Bas, derdejaars CMD-student aan de HvA Amsterdam. Ik ontwerp graag dingen die er niet alleen goed uitzien, maar ook echt ergens voor staan.</p>
             </div>
             <div class="af-item ri">
                 <span class="af-num">02</span>
-                <p class="af-text">Buiten school ben ik altijd wel bezig met iets. Festivals, tijd met vrienden en familie, de sportschool. Ik hou er niet van om stil te zitten en dat zie je ook terug in hoe ik werk.</p>
+                <p class="af-text" data-en="Outside of school I'm always doing something. Festivals, time with friends and family, the gym. I don't like sitting still and that shows in the way I work.">Buiten school ben ik altijd wel bezig met iets. Festivals, tijd met vrienden en familie, de sportschool. Ik hou er niet van om stil te zitten en dat zie je ook terug in hoe ik werk.</p>
             </div>
             <div class="af-item ri">
                 <span class="af-num">03</span>
-                <p class="af-text">Ik ben sociaal, hou van een goed gesprek en ga nergens voor liggen. Naast mijn studie werk ik bij Albert Heijn. Vanaf september 2026 ben ik op zoek naar een afstudeerstage waar ik echt iets kan bijdragen.</p>
+                <p class="af-text" data-en="I'm social, love a good conversation and always go for quality. Besides my studies I work at Albert Heijn. From September 2026 I'm looking for a graduation internship where I can truly contribute.">Ik ben sociaal, hou van een goed gesprek en ga altijd voor kwaliteit. Naast mijn studie werk ik bij Albert Heijn. Vanaf september 2026 ben ik op zoek naar een afstudeerstage waar ik echt iets kan bijdragen.</p>
             </div>
         </div>
 
         <div class="ab-grid">
             <div class="ab-block ri">
-                <span class="ab-label">Vaardigheden</span>
+                <span class="ab-label" data-en="Skills">Vaardigheden</span>
                 <ul class="ab-list">
-                    <li>Typografie</li>
+                    <li data-en="Typography">Typografie</li>
                     <li>Branding</li>
                     <li>UI Design</li>
                     <li>Motion Design</li>
                     <li>Webdesign</li>
-                    <li>Concept ontwikkeling</li>
+                    <li data-en="Concept development">Concept ontwikkeling</li>
                 </ul>
             </div>
             <div class="ab-block ri">
-                <span class="ab-label">Programma's</span>
+                <span class="ab-label" data-en="Software">Programma's</span>
                 <ul class="ab-list">
                     <li>Figma</li>
                     <li>Adobe Illustrator</li>
@@ -275,15 +264,15 @@
 
         <div class="currently-block ri">
             <div class="cb-row">
-                <span class="cb-key">Bezig met</span>
+                <span class="cb-key" data-en="Currently">Bezig met</span>
                 <span class="cb-val">CMD jaar 3 · HvA Amsterdam</span>
             </div>
             <div class="cb-row">
-                <span class="cb-key">Beschikbaar</span>
-                <span class="cb-val cb-accent">● Afstudeerstage · september 2026</span>
+                <span class="cb-key" data-en="Available">Beschikbaar</span>
+                <span class="cb-val cb-accent" data-en="● Graduation internship · September 2026">● Afstudeerstage · september 2026</span>
             </div>
             <div class="cb-row">
-                <span class="cb-key">Woont</span>
+                <span class="cb-key" data-en="Lives">Woont</span>
                 <span class="cb-val">Amsterdam, Nederland</span>
             </div>
         </div>
@@ -294,7 +283,7 @@
         <div class="section contact-inner">
             <span class="section-lbl ri">03 CONTACT</span>
 
-            <h2 class="contact-heading ri">Laten we<br>kennis maken.</h2>
+            <h2 class="contact-heading ri" data-en="Let's<br>connect.">Laten we<br>kennis maken.</h2>
 
             <a href="mailto:bas.witmond@gmail.com" class="contact-cta ri">
                 <span>bas.witmond@gmail.com</span>
@@ -308,7 +297,7 @@
                 <span class="cs-dot">·</span>
                 <a href="https://www.linkedin.com/in/bas-witmond-b30074305" target="_blank" rel="noopener" class="cs-link">LinkedIn ↗</a>
                 <span class="cs-dot">·</span>
-                <span class="cs-avail"><span class="avdot"></span>Beschikbaar · sept 2026</span>
+                <span class="cs-avail" data-en="<span class=&quot;avdot&quot;></span>Available · sept 2026"><span class="avdot"></span>Beschikbaar · sept 2026</span>
             </div>
         </div>
 
@@ -328,29 +317,87 @@
 
     <!-- ═══════ PROJECT OVERLAY ═══════ -->
     <div class="proj-overlay" id="projOverlay" aria-hidden="true">
+        <div class="po-sweep" id="poSweep"></div>
         <button class="po-close" id="poClose" aria-label="Sluit project">
             <span></span><span></span>
         </button>
         <div class="po-scroll">
-            <div class="po-content section">
-                <div class="po-header">
-                    <div class="po-hl">
-                        <span class="po-num" id="poNum">01</span>
-                        <div>
-                            <h2 class="po-title" id="poTitle">Project</h2>
-                            <span class="po-meta" id="poMeta">Categorie · Jaar</span>
+            <button class="po-back" id="poBack">← ALL PROJECTS</button>
+            <div class="po-content">
+
+                <!-- Hero: tekst links, mockup rechts -->
+                <section class="po-hero">
+                    <div class="po-hero-l">
+                        <span class="po-hero-cat" id="poMeta"></span>
+                        <div class="po-num-ghost" id="poNumGhost"></div>
+                        <h2 class="po-title" id="poTitle">Project</h2>
+                        <p class="po-tagline" id="poDesc"></p>
+                        <div class="po-hero-foot">
+                            <div class="po-meta-item">
+                                <span class="po-meta-lbl" data-en="Role & tools">Rol & tools</span>
+                                <span class="po-role" id="poRole"></span>
+                            </div>
+                            <a class="po-live-btn" id="poLiveBtn" href="#" target="_blank" rel="noopener">
+                                <span data-en="Experience it yourself">Beleef het zelf</span> <span class="po-live-arr">↗</span>
+                            </a>
                         </div>
+                        <div class="po-tags" id="poTags"></div>
                     </div>
-                    <div class="po-hr">
-                        <span class="po-rl">Rol</span>
-                        <span class="po-role" id="poRole"></span>
+                    <div class="po-hero-r" id="poHeroR"></div>
+                </section>
+
+                <!-- Het Werk -->
+                <section class="po-work" id="poWork">
+                    <div class="po-split-hd">
+                        <span data-en="The">Het</span>
+                        <span data-en="Work">Werk</span>
+                    </div>
+                    <div class="po-work-grid" id="poWorkImgs"></div>
+                </section>
+
+                <!-- Mijn Proces -->
+                <section class="po-process">
+                    <div class="po-split-hd">
+                        <span data-en="My">Mijn</span>
+                        <span data-en="Process">Proces</span>
+                    </div>
+                    <div class="po-proc-grid" id="poTasks"></div>
+                </section>
+
+                <!-- Design Elements -->
+                <section class="po-design-el" id="poDesignEl" style="display:none">
+                    <div class="po-split-hd">
+                        <span>Design</span>
+                        <span>Elements</span>
+                    </div>
+                    <div class="po-palette-grid" id="poPaletteGrid"></div>
+                    <div class="po-typo-grid" id="poTypoGrid"></div>
+                </section>
+
+                <!-- Quote -->
+                <div class="po-quote-block" id="poQuoteBlock">
+                    <blockquote class="po-quote-text" id="poQuoteText"></blockquote>
+                    <p class="po-quote-sub" id="poQuoteSub"></p>
+                </div>
+
+                <!-- Prototype link -->
+                <div class="po-proto-wrap" id="poProtoWrap">
+                    <a class="po-proto-btn" id="poProtoBtn" href="#" target="_blank" rel="noopener">
+                        <span id="poProtoLabel" data-en="View prototype">Bekijk prototype</span> <span class="po-proto-arr">↗</span>
+                    </a>
+                </div>
+
+                <!-- Next project -->
+                <div class="po-next" id="poNext">
+                    <span class="po-next-lbl">Next Project</span>
+                    <div class="po-next-row">
+                        <h3 class="po-next-title" id="poNextTitle"></h3>
+                        <span class="po-next-arr">→</span>
                     </div>
                 </div>
-                <div class="po-media" id="poMedia"></div>
-                <div class="po-body">
-                    <p class="po-desc" id="poDesc"></p>
-                    <div class="po-tasks" id="poTasks"></div>
-                </div>
+
+                <span id="poNum" style="display:none"></span>
+
             </div>
         </div>
     </div>

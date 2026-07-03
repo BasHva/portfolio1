@@ -6,7 +6,23 @@
       "WebFetch(domain:webflow.com)",
       "PowerShell(winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements)",
       "PowerShell(Get-Command gh -ErrorAction SilentlyContinue; Test-Path \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\"; Test-Path \"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\bin\\\\git.exe\"; Test-Path \"$env:APPDATA\\\\npm\\\\git.cmd\"; where.exe git 2>$null; where.exe gh 2>$null)",
-      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\GitHubDesktop\" -Recurse -Filter \"git.exe\" -ErrorAction SilentlyContinue | Select-Object -First 1 FullName)"
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\GitHubDesktop\" -Recurse -Filter \"git.exe\" -ErrorAction SilentlyContinue | Select-Object -First 1 FullName)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\baswi\\\\OneDrive - HvA\\\\Portfolio Persoonlijk\\\\projects\\\\\" | Where-Object { $_.Name -ne 'foto_bas.PNG' } | Remove-Item -Force -Confirm:$false)",
+      "PowerShell(cd \"c:\\\\Users\\\\baswi\\\\OneDrive - HvA\\\\Portfolio Persoonlijk\"; $git = \"C:\\\\Users\\\\baswi\\\\AppData\\\\Local\\\\GitHubDesktop\\\\app-3.4.9\\\\resources\\\\app\\\\git\\\\cmd\\\\git.exe\"; $files = @\\(\"brew-1.png\",\"brew-2.png\",\"brew-3.png\",\"brew-4.png\",\"figma-1.png\",\"figma-2.png\",\"figma-3.png\",\"degreep-1.png\",\"degreep-2.png\",\"degreep-3.png\",\"degreep-4.png\",\"degreep-5.png\",\"degreep-6.png\",\"mockup-1.png\",\"Socialmediaverslaving.mp4\"\\); foreach \\($f in $files\\) { & $git checkout HEAD -- \"projects/$f\" 2>&1 | Out-Null; Write-Host \"restored: $f\" })",
+      "WebFetch(domain:tomvanderputten.nl)",
+      "PowerShell(ls \"c:\\\\Users\\\\baswi\\\\OneDrive - HvA\\\\Portfolio Persoonlijk\\\\.claude\\\\skills\\\\\" 2>$null)",
+      "PowerShell(ls \"c:\\\\Users\\\\baswi\\\\OneDrive - HvA\\\\Portfolio Persoonlijk\\\\.claude\\\\\" 2>$null)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npx -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
+      "PowerShell(python -c \"import selenium; print\\('selenium ok'\\)\" 2>$null)",
+      "PowerShell(python -c \"from playwright.sync_api import sync_playwright; print\\('playwright ok'\\)\" 2>$null)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\baswi\\\\OneDrive - HvA\\\\Portfolio Persoonlijk\\\\projects\\\\greep2.png\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\baswi\\\\OneDrive - HvA\\\\Portfolio Persoonlijk\\\\projects\\\\\" | Select-Object Name, @{N='Size';E={[math]::Round\\($_.Length/1KB,1\\)}} | Sort-Object Name)",
+      "PowerShell(Get-ChildItem \"projects\" | Select-Object Name, @{N='MB';E={[math]::Round\\($_.Length/1MB,2\\)}}, LastWriteTime | Sort-Object LastWriteTime -Descending)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "PowerShell(Get-Command py -ErrorAction SilentlyContinue)"
     ]
   }
 }
